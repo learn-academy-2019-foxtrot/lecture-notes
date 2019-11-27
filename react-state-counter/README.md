@@ -5,7 +5,7 @@
 - import the App.css file to App.js `import './App.css';`
 - create a class called Counter
 `class Counter extends Component`
-- add a constructor with a state object
+- add a constructor method with a state object
 
 ```
 constructor(){
@@ -26,36 +26,28 @@ constructor(){
 addOne = () => {
 }
 ```
-- within the add one method use the react built in method `setState()` to update the state object
+- within the addOne method use the react built in method `setState()` to update the state object
 ```
 addOne = () => {
   this.setState({ counter: this.state.counter + 1})
   }
 ```
 - call the method `onClick` in the button tag
-`<button onClick={this.addOne}>Add One</button>`
+```
+<button onClick={this.addOne}>Add One</button>
+```
 
 ## Decrementing the Counter
 - add a button to the div in the render method `<button>Remove One</button>`
 - add a method to decrement the counter
 - the method lives outside the constructor and before the render
-<<<<<<< HEAD
 ```
 removeOne = () => {
 }
 ```
-- within the add one method use the react built in method `setState()` to update the state object
+- within the removeOne method use the react built in method `setState()` to update the state object
 ```
 removeOne = () => {
-=======
-
-`removeOne = () => {
-
-  }`
-- within the add one method use the react built in method `setState()` to update the state object
-
-`removeOne = () => {
->>>>>>> 47c82176ce9f8013f668b602cbf6851e693ba428
   this.setState({ counter: this.state.counter - 1})
 }
 ```
@@ -68,7 +60,10 @@ if(this.state.counter === 0){
 }
 this.setState({ counter: this.state.counter})
 ```
-
+- call the method `onClick` in the button tag
+```
+<button onClick={this.removeOne}>Remove One</button>
+```
 ## Breaking out the component into its own file
 - create a new file in the src folder named the same thing as the class name `src/Counter.js`
 - import React Component to the Counter file `import React, { Component } from 'react'`
