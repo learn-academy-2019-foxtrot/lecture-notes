@@ -32,10 +32,12 @@
 - add a button to the div in the render method `<button>Remove One</button>`
 - add a method to decrement the counter
 - the method lives outside the constructor and before the render
+
 `removeOne = () => {
 
   }`
 - within the add one method use the react built in method `setState()` to update the state object
+
 `removeOne = () => {
   this.setState({ counter: this.state.counter - 1})
   }`
