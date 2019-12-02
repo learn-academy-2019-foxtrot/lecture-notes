@@ -1,0 +1,23 @@
+body{
+  margin: 1em;
+  text-align: center;
+}
+h1{
+  margin: 1em;
+}
+#color-box{
+  display: flex;
+  height: 200px;
+  width: 200px;
+  border: 5px solid black;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-size: 3em;
+  text-shadow: 1px 1px black;
+}
+#color-box-holder{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
