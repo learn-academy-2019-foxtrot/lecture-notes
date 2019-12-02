@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import ColorBox from './ColorBox.js'
+import ColorBox from './ColorBox'
 import './App.css'
 
 class App extends Component{
@@ -8,6 +8,7 @@ class App extends Component{
       <div>
         <h1>Color Box Challenge</h1>
         <div id="color-box-holder">
+          <ColorBox />
           <ColorBox />
           <ColorBox />
           <ColorBox />
